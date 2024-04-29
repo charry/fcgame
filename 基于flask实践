@@ -1,0 +1,8 @@
+基于flask实现
+1、新建flask工程
+2、将index.html放在template目录下将其他五个目录放在static下
+3、将index.html中的js的src改写为url_for格式，css和icon也需要改写
+  例如 src="lib/jquery-1.4.2.min.js" 改写为下列
+       src="{{ url_for('static', filename='lib/jquery-1.4.2.min.js')}}"
+
+4、最后roms的目录前面加一个static
